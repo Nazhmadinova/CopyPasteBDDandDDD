@@ -409,4 +409,55 @@ formatter.result({
 formatter.after({
   "status": "passed"
 });
+formatter.background({
+  "name": "Login and going to Invoice module",
+  "description": "",
+  "keyword": "Background"
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User on login page and enters credentials",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "ValidateInvoiceSteps.user_on_login_page_and_enters_credentials()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User sees home page and clicks on Invoices module",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "ValidateInvoiceSteps.user_sees_home_page_and_clicks_on_Invoices_module()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Verify validate invoice with empty product field",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@SmokeTest"
+    }
+  ]
+});
+formatter.step({
+  "name": "User selects customer\u0027s invoice that has 0 amount of total and with \"Draft\" status",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "ValidateInvoiceSteps.user_selects_customer_s_invoice_that_has_amount_of_total_and_with_status(Integer,String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
 });

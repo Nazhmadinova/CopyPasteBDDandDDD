@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 8487006379,
+              "duration": 7808732241,
               "status": "passed"
             },
             "line": 9,
@@ -23,7 +23,7 @@
           },
           {
             "result": {
-              "duration": 2331484318,
+              "duration": 2085897474,
               "status": "passed"
             },
             "line": 10,
@@ -39,7 +39,7 @@
         "before": [
           {
             "result": {
-              "duration": 5821924,
+              "duration": 2262139,
               "status": "passed"
             },
             "match": {
@@ -54,7 +54,7 @@
         "after": [
           {
             "result": {
-              "duration": 112219686,
+              "duration": 146890477,
               "status": "passed"
             },
             "match": {
@@ -67,7 +67,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4074544441,
+              "duration": 4391131271,
               "status": "passed"
             },
             "line": 13,
@@ -85,7 +85,7 @@
           },
           {
             "result": {
-              "duration": 754458030,
+              "duration": 808456246,
               "status": "passed"
             },
             "line": 14,
@@ -111,7 +111,7 @@
         "steps": [
           {
             "result": {
-              "duration": 5662295402,
+              "duration": 5136344005,
               "status": "passed"
             },
             "line": 9,
@@ -123,7 +123,7 @@
           },
           {
             "result": {
-              "duration": 2374086432,
+              "duration": 2324602784,
               "status": "passed"
             },
             "line": 10,
@@ -139,7 +139,7 @@
         "before": [
           {
             "result": {
-              "duration": 82923,
+              "duration": 62393,
               "status": "passed"
             },
             "match": {
@@ -154,7 +154,7 @@
         "after": [
           {
             "result": {
-              "duration": 108152153,
+              "duration": 99651618,
               "status": "passed"
             },
             "match": {
@@ -167,7 +167,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3392351982,
+              "duration": 3417948392,
               "status": "passed"
             },
             "line": 17,
@@ -185,7 +185,7 @@
           },
           {
             "result": {
-              "duration": 3037023050,
+              "duration": 3039917659,
               "status": "passed"
             },
             "line": 18,
@@ -211,7 +211,7 @@
         "steps": [
           {
             "result": {
-              "duration": 5038987661,
+              "duration": 5075822807,
               "status": "passed"
             },
             "line": 9,
@@ -223,7 +223,7 @@
           },
           {
             "result": {
-              "duration": 2079157654,
+              "duration": 2100320571,
               "status": "passed"
             },
             "line": 10,
@@ -239,7 +239,7 @@
         "before": [
           {
             "result": {
-              "duration": 74321,
+              "duration": 68108,
               "status": "passed"
             },
             "match": {
@@ -254,7 +254,7 @@
         "after": [
           {
             "result": {
-              "duration": 112054437,
+              "duration": 103899734,
               "status": "passed"
             },
             "match": {
@@ -267,7 +267,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3370653186,
+              "duration": 3317413968,
               "status": "passed"
             },
             "line": 17,
@@ -285,7 +285,7 @@
           },
           {
             "result": {
-              "duration": 3037890375,
+              "duration": 3036351053,
               "status": "passed"
             },
             "line": 18,
@@ -311,7 +311,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4708851052,
+              "duration": 4638379451,
               "status": "passed"
             },
             "line": 9,
@@ -323,7 +323,7 @@
           },
           {
             "result": {
-              "duration": 2229406892,
+              "duration": 2366869639,
               "status": "passed"
             },
             "line": 10,
@@ -339,7 +339,7 @@
         "before": [
           {
             "result": {
-              "duration": 58622,
+              "duration": 71822,
               "status": "passed"
             },
             "match": {
@@ -354,7 +354,7 @@
         "after": [
           {
             "result": {
-              "duration": 98742615,
+              "duration": 94882235,
               "status": "passed"
             },
             "match": {
@@ -367,7 +367,7 @@
         "steps": [
           {
             "result": {
-              "duration": 6326897437,
+              "duration": 6335598518,
               "status": "passed"
             },
             "line": 26,
@@ -389,7 +389,7 @@
           },
           {
             "result": {
-              "duration": 793204748,
+              "duration": 746102215,
               "status": "passed"
             },
             "line": 27,
@@ -401,7 +401,7 @@
           },
           {
             "result": {
-              "duration": 4074451474,
+              "duration": 4136470661,
               "status": "passed"
             },
             "line": 28,
@@ -413,7 +413,7 @@
           },
           {
             "result": {
-              "duration": 4074542932,
+              "duration": 4083873423,
               "status": "passed"
             },
             "line": 29,
@@ -425,7 +425,7 @@
           },
           {
             "result": {
-              "duration": 3029094823,
+              "duration": 3025871454,
               "status": "passed"
             },
             "line": 30,
@@ -457,7 +457,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4698634976,
+              "duration": 4706214532,
               "status": "passed"
             },
             "line": 9,
@@ -469,7 +469,7 @@
           },
           {
             "result": {
-              "duration": 2189776176,
+              "duration": 2178754316,
               "status": "passed"
             },
             "line": 10,
@@ -485,7 +485,7 @@
         "before": [
           {
             "result": {
-              "duration": 73459,
+              "duration": 79205,
               "status": "passed"
             },
             "match": {
@@ -500,7 +500,7 @@
         "after": [
           {
             "result": {
-              "duration": 119296814,
+              "duration": 106136512,
               "status": "passed"
             },
             "match": {
@@ -513,7 +513,7 @@
         "steps": [
           {
             "result": {
-              "duration": 6281035774,
+              "duration": 6259677094,
               "status": "passed"
             },
             "line": 33,
@@ -535,7 +535,7 @@
           },
           {
             "result": {
-              "duration": 749373259,
+              "duration": 726859048,
               "status": "passed"
             },
             "line": 34,
@@ -547,7 +547,7 @@
           },
           {
             "result": {
-              "duration": 4680295796,
+              "duration": 4502110565,
               "status": "passed"
             },
             "line": 35,
@@ -559,7 +559,7 @@
           },
           {
             "result": {
-              "duration": 600283743,
+              "duration": 600966992,
               "status": "passed"
             },
             "line": 36,
@@ -571,7 +571,7 @@
           },
           {
             "result": {
-              "duration": 3142034241,
+              "duration": 3137256264,
               "status": "passed"
             },
             "line": 37,
@@ -586,6 +586,98 @@
               "location": "ValidateInvoiceSteps.user_sees_that_after_sending_Send_By_Email_button_is_not_highlighted_uses_file(String)"
             },
             "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SmokeTest"
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "name": "Login and going to Invoice module",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 5087415866,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User on login page and enters credentials",
+            "match": {
+              "location": "ValidateInvoiceSteps.user_on_login_page_and_enters_credentials()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2097434767,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User sees home page and clicks on Invoices module",
+            "match": {
+              "location": "ValidateInvoiceSteps.user_sees_home_page_and_clicks_on_Invoices_module()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 174382,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setup()"
+            }
+          }
+        ],
+        "line": 39,
+        "name": "Verify validate invoice with empty product field",
+        "description": "",
+        "id": "validate-invoice-feature-for-accepting-created-invoices;verify-validate-invoice-with-empty-product-field",
+        "after": [
+          {
+            "result": {
+              "duration": 104089698,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 38163986378,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "User selects customer\u0027s invoice that has 0 amount of total and with \"Draft\" status",
+            "match": {
+              "arguments": [
+                {
+                  "val": "0",
+                  "offset": 41
+                },
+                {
+                  "val": "\"Draft\"",
+                  "offset": 68
+                }
+              ],
+              "location": "ValidateInvoiceSteps.user_selects_customer_s_invoice_that_has_amount_of_total_and_with_status(Integer,String)"
+            },
+            "keyword": "And "
           }
         ],
         "tags": [

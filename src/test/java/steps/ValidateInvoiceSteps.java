@@ -28,11 +28,6 @@ public class ValidateInvoiceSteps {
     SendByEmailPage sendByEmailPage = new SendByEmailPage();
     HomePage homePage = new HomePage();
 
-    FileInputStream fileInputStream;
-    XSSFWorkbook workbook;
-    XSSFSheet sheet;
-    XSSFCell cell;
-
     @When("User on login page and enters credentials")
     public void user_on_login_page_and_enters_credentials() {
         SeleniumUtils.login(Config.getProperties("url1"),
@@ -50,10 +45,7 @@ public class ValidateInvoiceSteps {
     @When("selects customer's invoice with status from file {string}")
     public void selects_customer_s_invoice_with_status_from_file(String string) throws IOException {
 
-        fileInputStream = new FileInputStream(string);
-        workbook = new XSSFWorkbook(fileInputStream);
-        sheet = workbook.getSheet("ValidateFunction");
-        cell  = sheet.getRow(0).getCell(1);
+        XSSFCell cell = SeleniumUtils.getCell(string,"ValidateFunction",0,1);
 
         SeleniumUtils.pauseWithTreadSleep(3);
         List<WebElement> statuses = invoicingModulePage.tableStatus;
@@ -171,10 +163,8 @@ public class ValidateInvoiceSteps {
 
     @Then("User sees that after sending Send By Email button is not highlighted, uses file {string}")
     public void user_sees_that_after_sending_Send_By_Email_button_is_not_highlighted_uses_file(String string) throws IOException{
-        fileInputStream = new FileInputStream(string);
-        workbook = new XSSFWorkbook(fileInputStream);
-        sheet = workbook.getSheet("ValidateFunction");
-        cell  = sheet.getRow(4).getCell(1);
+
+        XSSFCell cell = SeleniumUtils.getCell(string,"ValidateFunction",4,1);
 
         SeleniumUtils.pauseWithTreadSleep(3);
 
@@ -185,9 +175,10 @@ public class ValidateInvoiceSteps {
 
     @When("User selects customer's invoice that has {int} amount of total and with {string} status")
     public void user_selects_customer_s_invoice_that_has_amount_of_total_and_with_status(Integer int1, String string) {
-        List<WebElement> totalAmount = Driver.getDriver().findElements(By.xpath("//tbody[@class='ui-sortable']/tr/td[8]"));
-        List<WebElement> statuses = Driver.getDriver().findElements(By.xpath("//tbody[@class='ui-sortable']/tr/td[10]"));
-         SeleniumUtils.pauseWithTreadSleep(2);
+
+        List<WebElement> totalAmount = invoicingModulePage.tableTotal;
+        List<WebElement> statuses = invoicingModulePage.tableStatus;
+        // SeleniumUtils.pauseWithTreadSleep(2);
         boolean check = true;
 
         int a = 0;
@@ -207,17 +198,14 @@ public class ValidateInvoiceSteps {
                     break;
                 }
             }
-
-            SeleniumUtils.pauseWithTreadSleep(5);
+            SeleniumUtils.pauseWithTreadSleep(2);
 
             try {
                 existingCustomerInvoicePage.productFieldFirst.getText();
-                SeleniumUtils.pauseWithTreadSleep(5);
-                Driver.getDriver().findElement(By.xpath("(//span[contains(text(),'Invoicing')])[1]")).click();
-                //homePage.invoicingButton.click();
+                homePage.invoicingButton.click();
             }catch (NoSuchElementException e){
                 existingCustomerInvoicePage.validateButton.click();
-                SeleniumUtils.pauseWithTreadSleep(3);
+                //SeleniumUtils.pauseWithTreadSleep(3);
                 String warningMsg = existingCustomerInvoicePage.emptyProductFieldValidateWarning.getText();
                 Assert.assertEquals(warningMsg,"Please create some invoice lines.");
                 SeleniumUtils.pauseWithTreadSleep(2);
@@ -225,6 +213,47 @@ public class ValidateInvoiceSteps {
                 break;
             }
         }
+
+//        List<WebElement> totalAmount = Driver.getDriver().findElements(By.xpath("//tbody[@class='ui-sortable']/tr/td[8]"));
+//        List<WebElement> statuses = Driver.getDriver().findElements(By.xpath("//tbody[@class='ui-sortable']/tr/td[10]"));
+//         SeleniumUtils.pauseWithTreadSleep(2);
+//        boolean check = true;
+//
+//        int a = 0;
+//        while (check){
+//            for(int i = a; i < totalAmount.size()-1; i++){
+//                String str = totalAmount.get(i).getText();
+//                String newStr = "";
+//                for(int j = 0; j < str.length(); j++){
+//                    if(str.charAt(j) == '-' || Character.isDigit(str.charAt(j)) || str.charAt(j) == '.'){
+//                        newStr += str.charAt(j);
+//                    }
+//                }
+//                double eachAmount = Double.parseDouble(newStr);
+//                if(statuses.get(i).getText().equals(string) && eachAmount == int1){
+//                    totalAmount.get(i).click();
+//                    a = i+1;
+//                    break;
+//                }
+//            }
+//
+//            SeleniumUtils.pauseWithTreadSleep(5);
+//
+//            try {
+//                existingCustomerInvoicePage.productFieldFirst.getText();
+//                SeleniumUtils.pauseWithTreadSleep(5);
+//                Driver.getDriver().findElement(By.xpath("(//span[contains(text(),'Invoicing')])[1]")).click();
+//                //homePage.invoicingButton.click();
+//            }catch (NoSuchElementException e){
+//                existingCustomerInvoicePage.validateButton.click();
+//                SeleniumUtils.pauseWithTreadSleep(3);
+//                String warningMsg = existingCustomerInvoicePage.emptyProductFieldValidateWarning.getText();
+//                Assert.assertEquals(warningMsg,"Please create some invoice lines.");
+//                SeleniumUtils.pauseWithTreadSleep(2);
+//                existingCustomerInvoicePage.wrongValidateWarningOkButton.click();
+//                break;
+//            }
+//        }
     }
 
 
