@@ -36,6 +36,6 @@ Feature: Validate invoice feature for accepting created invoices
     And User clicks Send button
     Then User sees that after sending Send By Email button is not highlighted, uses file "src/TestData.xlsx"
 
-#  Scenario: Verify validate invoice with empty product field
-#    And User selects customer's invoice that has 0 amount of total and with "Draft" status
+  Scenario: Verify validate invoice with empty product field
+    And User selects customer's invoice that has 0 amount of total and with "Draft" status
 
