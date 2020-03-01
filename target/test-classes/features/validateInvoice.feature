@@ -1,4 +1,4 @@
-@SmokeTest
+
 Feature: Validate invoice feature for accepting created invoices
   Agile story: As a user I want to be able to validate customer's invoices
   so register the payment and send it to customer
