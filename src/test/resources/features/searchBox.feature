@@ -14,10 +14,10 @@ Feature: Search for invoice feature
     Then User should be able to see three dropdown menus underneath the search box Filters,Group by,Favorites
 
 
-  @SmokeTest
-  Scenario:INVOICES SEARCH BY THE CUSTOMER NAME
-    When User enters valid input from file "src/TestData.xlsx"
-    Then All of the updated invoices related to search should be displayed
+#  @SmokeTest
+#  Scenario:INVOICES SEARCH BY THE CUSTOMER NAME
+#    When User enters valid input from file "src/TestData.xlsx"
+#    Then All of the updated invoices related to search should be displayed
 
   @SmokeTest
   Scenario Outline: verifying preset filter options in the "Filters" dropdown menu
@@ -31,12 +31,12 @@ Feature: Search for invoice feature
       | Paid              |
       | Draft             |
       | Open              |
-      | Overdue           |
-      | My Invoices       |
-      | My Activities     |
-      | Late Activities   |
-      | Today Activities  |
-      | Future Activities |
+#      | Overdue           |
+#      | My Invoices       |
+#      | My Activities     |
+#      | Late Activities   |
+#      | Today Activities  |
+#      | Future Activities |
 
 
 
